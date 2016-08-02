@@ -1,0 +1,32 @@
+<span>
+
+         <div class="move-title">{{keyur.Title}} ({{keyur.Year}})</div>
+         <div><strong>Starring:</strong> {{keyur.details.Actors}}</div>
+         <div><strong>Rated:</strong> {{keyur.details.Rated}}</div>
+         <div><strong>Runtime:</strong> {{keyur.details.Runtime}}</div>
+         <div><strong>Genre:</strong> {{keyur.details.Genre}}</div>
+         <div><strong>Director:</strong> {{keyur.details.Director}}</div>
+         <div><strong>Writer:</strong> {{keyur.details.Writer}}</div>
+         <div><strong>Language:</strong> {{keyur.details.Language}}</div>
+         <div><strong>Studio:</strong> {{keyur.details.Production}}</div>
+         <div>
+             <div><strong>Poster:</strong></div>
+             <img src="{{keyur.details.Poster}}" alt="poster" style="width:300px;height:300px;">
+         </div>
+
+
+       </span>
+
+<span>
+
+         <div><strong>Plot: </strong>{{keyur.details.Plot}}</div>
+
+       </span>
+
+<div class="clear"></div>
+
+<div class="reviews">
+    <h3>Ratings:</h3>
+    <em>IMDB: {{keyur.details.imdbRating}} | Rotten Tomatoes Meter: {{keyur.details.tomatoMeter}} ({{keyur.details.tomatoImage}}) | Metascore: {{keyur.details.Metascore}}</em>
+
+</div>

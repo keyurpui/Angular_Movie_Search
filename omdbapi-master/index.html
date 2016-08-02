@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css" />
+  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <script src="script.js"></script>
+  <title>Movie Search | OMDb API</title>
+</head>
+
+<body ng-app="OMDbAPISearch">
+<div class="container" ng-controller="searchMovies">
+
+  <h1>Enter a Movie Title Below</h1>
+  <form>
+    <div class="search">
+      <input id="theSearch" ng-model="searchparam" placeholder="Enter the movie name" type="text" ngTrim="true" ng-keyup="fetch()" />
+      <!--<button ng-click="fetch()">Search</button>-->
+      <div class="clear"></div>
+    </div>
+  </form>
+
+  <div class="results">
+    <div class="result" movie-srch-results ng-repeat="keyur in movieResults"></div>
+
+
+  </div>
+  <div class="noResults"></div>
+
+</div>
+</body>
+
+</html>
