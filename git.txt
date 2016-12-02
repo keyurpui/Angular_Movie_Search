@@ -1,0 +1,19 @@
+
+fork thna clone
+git clone
+git status(after file change)
+git add -A(Add all untrack file to local)
+git commit filename -m "massage"(if single file change to local)
+git commit -a -m "massage"(all file will be commited)
+git pull origin master(update local with updated master)
+git push origin master(pull request with massage)
+
+
++++++Branch checkout++++++++
+
+git clone https://github.com/keyurpui/sample_app.git (Clone to local)
+git checkout -b testing_app_branch(Checkout to new branch)
+git branch --set-upstream-to=origin testing_app_branch()
+git commit -a -m "change done in style.css"
+git pull origin testing_app_branch
+git push origin testing_app_branch
