@@ -1,6 +1,6 @@
 
-fork thna clone
-git clone
+fork then clone
+git clone "url of git project"
 git status(after file change)
 git add -A(Add all untrack file to local)
 git commit filename -m "massage"(if single file change to local)
