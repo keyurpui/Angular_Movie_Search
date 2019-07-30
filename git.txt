@@ -17,3 +17,15 @@ git branch --set-upstream-to=origin testing_app_branch()
 git commit -a -m "change done in style.css"
 git pull origin testing_app_branch
 git push origin testing_app_branch
+
+
++++++++++++VSCODE setup+++++++++
+
+{
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  "editor.fontSize": 14,
+  "typescript.tsdk": "node_modules/typescript/lib/"
+}
