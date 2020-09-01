@@ -43,6 +43,12 @@
                         });
                     } else {
                         $('.results').css('display', 'none');
+
+
+
+
+
+
                         $('.noResults').css('display', 'none');
                         $('#theSearch').fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
                     }
